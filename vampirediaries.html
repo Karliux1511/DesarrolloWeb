@@ -7,77 +7,105 @@
     <link rel="stylesheet" href="css/vampirediaries.css">
 </head>
 <body>
-    <header class="header-bg">
-        <h1 class="main-title">Vampire Diaries</h1>
-        <h2 class="subtitle">Drama, Romance y Misterio en Mystic Falls</h2>
-    </header>
-    <section class="intro">
-        <p class="intro-text">
-            <span id="sinopsis">Vampire Diaries</span> es una serie estadounidense que mezcla drama, romance y elementos sobrenaturales. La historia sigue a Elena Gilbert, una joven que se ve envuelta en el mundo de los vampiros, brujas y hombres lobo en el misterioso pueblo de Mystic Falls. La serie explora temas como la familia, la amistad, el sacrificio y la lucha entre el bien y el mal.
-        </p>
-        <img src="img/Vampire.jpg" alt="Póster Vampire Diaries" class="poster">
-    </section>
-    <section class="characters">
-        <h3 class="section-title">Personajes Principales</h3>
-        <div class="character-grid">
-            <div class="character-card">
-                <img src="img/Elena_Giblert.jpeg" alt="Elena Gilbert" class="character-img">
-                <h4 class="character-name">Elena Gilbert</h4>
-                <p class="character-desc">Elena es la protagonista de la serie, una joven que tras perder a sus padres se ve envuelta en el mundo sobrenatural de Mystic Falls. Su vida cambia al conocer a los hermanos Salvatore.</p>
-            </div>
-            <div class="character-card">
-                <img src="img/Damon_Salvatore.jpg" alt="Damon Salvatore" class="character-img">
-                <h4 class="character-name">Damon Salvatore</h4>
-                <p class="character-desc">Damon es el hermano mayor de Stefan, conocido por su personalidad rebelde y su sentido del humor sarcástico. Aunque parece frío, es capaz de grandes sacrificios por quienes ama.</p>
-            </div>
-            <div class="character-card">
-                <img src="img/Stefan Salvatore.jpg" alt="Stefan Salvatore" class="character-img">
-                <h4 class="character-name">Stefan Salvatore</h4>
-                <p class="character-desc">Stefan es el hermano menor, caracterizado por su bondad y su lucha constante por mantener su humanidad. Su relación con Elena y Damon es el eje central de la serie.</p>
-            </div>
-            <div class="character-card">
-                <img src="img/Bonnie_Bennett.jpg" alt="Bonnie Bennett" class="character-img">
-                <h4 class="character-name">Bonnie Bennett</h4>
-                <p class="character-desc">Bonnie es la mejor amiga de Elena y una poderosa bruja. Su papel es fundamental en la protección de sus amigos y en la lucha contra las fuerzas oscuras.</p>
-            </div>
-            <div class="character-card">
-                <img src="img/Caroline_Forbes.jpg" alt="Caroline Forbes" class="character-img">
-                <h4 class="character-name">Caroline Forbes</h4>
-                <p class="character-desc">Caroline comienza como una chica popular y superficial, pero evoluciona hasta convertirse en una de las vampiras más fuertes y leales del grupo.</p>
-            </div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <span class="navbar-brand">Inicio</span>
+            <ul class="navbar-links">
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#characters">Personajes</a></li>
+                <li><a href="#plot">Trama</a></li>
+                <li><a href="#seasons">Temporadas</a></li>
+                <li><a href="#facts">Curiosidades</a></li>
+            </ul>
         </div>
+    <!-- Sin iconos -->
+    </nav>
+    <header class="header-bg">
+        <h1 class="main-title">Serie de drama, romance y misterio sobrenatural.</h1>
+    </header>
+    <section class="intro" id="intro">
+        <article class="blog-entry">
+            <h2 class="blog-title">¿Por qué Vampire Diaries?</h2>
+            <div class="blog-content">
+                <img src="img/Vampire.jpg" alt="Póster Vampire Diaries" class="poster">
+                <p><span id="sinopsis">Vampire Diaries</span> es una serie estadounidense que mezcla drama, romance y elementos sobrenaturales. La historia sigue a Elena Gilbert, una joven que se ve envuelta en el mundo de los vampiros, brujas y hombres lobo en el misterioso pueblo de Mystic Falls.</p>
+                <p>Temas: familia, amistad, sacrificio y la lucha entre el bien y el mal.</p>
+            </div>
+        </article>
     </section>
-    <section class="plot">
-        <h3 class="section-title">Resumen de la Trama</h3>
-        <p class="plot-text">
-            La serie inicia con la llegada de los hermanos Salvatore a Mystic Falls y el triángulo amoroso que se forma con Elena. A lo largo de las temporadas, los personajes enfrentan amenazas sobrenaturales, secretos familiares y dilemas morales. La historia se desarrolla en torno a la búsqueda de redención, el poder de la amistad y el sacrificio por los seres queridos.
-        </p>
-        <img src="img/Mystic_Falls.jpeg" alt="Mystic Falls" class="plot-img">
+    <section class="characters" id="characters">
+        <article class="blog-entry">
+            <h2 class="blog-title">Personajes Principales</h2>
+            <div class="character-grid">
+                <div class="character-card">
+                    <img src="img/Elena_Giblert.jpeg" alt="Elena Gilbert" class="character-img">
+                    <h4 class="character-name">Elena Gilbert</h4>
+                    <p class="character-desc">Protagonista, joven valiente y empática.</p>
+                </div>
+                <div class="character-card">
+                    <img src="img/Damon_Salvatore.jpg" alt="Damon Salvatore" class="character-img">
+                    <h4 class="character-name">Damon Salvatore</h4>
+                    <p class="character-desc">Rebelde, sarcástico y protector.</p>
+                </div>
+                <div class="character-card">
+                    <img src="img/Stefan Salvatore.jpg" alt="Stefan Salvatore" class="character-img">
+                    <h4 class="character-name">Stefan Salvatore</h4>
+                    <p class="character-desc">Bondadoso, lucha por su humanidad.</p>
+                </div>
+                <div class="character-card">
+                    <img src="img/Bonnie_Bennett.jpg" alt="Bonnie Bennett" class="character-img">
+                    <h4 class="character-name">Bonnie Bennett</h4>
+                    <p class="character-desc">Bruja poderosa y leal amiga.</p>
+                </div>
+                <div class="character-card">
+                    <img src="img/Caroline_Forbes.jpg" alt="Caroline Forbes" class="character-img">
+                    <h4 class="character-name">Caroline Forbes</h4>
+                    <p class="character-desc">Popular, fuerte y leal.</p>
+                </div>
+            </div>
+        </article>
     </section>
-    <section class="seasons">
-        <h3 class="section-title">Temporadas</h3>
-        <ul class="season-list">
-            <li><strong>Temporada 1:</strong> Presentación de los personajes y el misterio de los vampiros en Mystic Falls.</li>
-            <li><strong>Temporada 2:</strong> Aparición de hombres lobo y la maldición de la piedra lunar.</li>
-            <li><strong>Temporada 3:</strong> La llegada de los Originales y el pasado de los Salvatore.</li>
-            <li><strong>Temporada 4:</strong> Elena se convierte en vampira y surge la búsqueda de la cura.</li>
-            <li><strong>Temporada 5:</strong> El Otro Lado y los viajeros amenazan Mystic Falls.</li>
-            <li><strong>Temporada 6:</strong> La magia desaparece y los personajes enfrentan nuevas pérdidas.</li>
-            <li><strong>Temporada 7:</strong> Nuevos villanos y el regreso de viejos enemigos.</li>
-            <li><strong>Temporada 8:</strong> El enfrentamiento final y el destino de los protagonistas.</li>
-        </ul>
+    <section class="plot" id="plot">
+        <article class="blog-entry">
+            <h2 class="blog-title">Resumen de la Trama</h2>
+            <div class="plot-flex">
+                <div class="plot-text">
+                    La serie inicia con la llegada de los hermanos Salvatore a Mystic Falls y el triángulo amoroso con Elena.<br>
+                    Los personajes enfrentan amenazas sobrenaturales, secretos familiares y dilemas morales.<br>
+                    La historia gira en torno a la redención, la amistad y el sacrificio.
+                </div>
+                <img src="img/Mystic_Falls.jpeg" alt="Mystic Falls" class="plot-img">
+            </div>
+        </article>
     </section>
-    <section class="facts">
-        <h3 class="section-title">Datos Curiosos</h3>
-        <ul class="fact-list">
-            <li>La serie está basada en los libros de L.J. Smith.</li>
-            <li>Se estrenó en 2009 y finalizó en 2017, con un total de 8 temporadas y 171 episodios.</li>
-            <li>El pueblo de Mystic Falls es ficticio, pero las locaciones reales están en Georgia, EE.UU.</li>
-            <li>Vampire Diaries generó dos series derivadas: The Originals y Legacies.</li>
-        </ul>
+    <section class="seasons" id="seasons">
+        <article class="blog-entry">
+            <h2 class="blog-title">Temporadas</h2>
+            <ul class="season-list">
+                <li><strong>Temporada 1:</strong> Presentación y misterio de los vampiros.</li>
+                <li><strong>Temporada 2:</strong> Hombres lobo y la maldición lunar.</li>
+                <li><strong>Temporada 3:</strong> Los Originales y el pasado de los Salvatore.</li>
+                <li><strong>Temporada 4:</strong> Elena se convierte en vampira y buscan la cura.</li>
+                <li><strong>Temporada 5:</strong> El Otro Lado y los viajeros.</li>
+                <li><strong>Temporada 6:</strong> La magia desaparece y nuevas pérdidas.</li>
+                <li><strong>Temporada 7:</strong> Nuevos villanos y viejos enemigos.</li>
+                <li><strong>Temporada 8:</strong> El enfrentamiento final y el destino de los protagonistas.</li>
+            </ul>
+        </article>
+    </section>
+    <section class="facts" id="facts">
+        <article class="blog-entry">
+            <h2 class="blog-title">Datos Curiosos</h2>
+            <ul class="fact-list">
+                <li>Basada en los libros de L.J. Smith.</li>
+                <li>8 temporadas, 171 episodios (2009-2017).</li>
+                <li>Mystic Falls es ficticio, locaciones reales en Georgia, EE.UU.</li>
+                <li>Generó dos series derivadas: The Originals y Legacies.</li>
+            </ul>
+        </article>
     </section>
     <footer class="footer-bg">
-        <p class="footer-text">Página creada para mostrar información sobre mi serie favorita: Vampire Diaries.</p>
+        <p class="footer-text">Karla Daniela Contreras Rodas</p>
     </footer>
 </body>
 </html>

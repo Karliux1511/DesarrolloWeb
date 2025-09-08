@@ -1,156 +1,184 @@
+
+
 body {
-    background-color: #181818;
-    color: #ececec;
-    font-family: 'Montserrat', 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #18181b;
+	color: #f3f3f3;
+	margin: 0;
+	padding: 0;
 }
+
+
+.navbar {
+	background: transparent;
+	box-shadow: none;
+	padding: 1.2em 0 0.7em 0;
+}
+.navbar-container {
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+}
+.navbar-brand {
+	font-size: 1.3em;
+	font-weight: 600;
+	color: #e11d48;
+	letter-spacing: 1px;
+	background: none;
+	padding: 0;
+}
+.navbar-links {
+	list-style: none;
+	display: flex;
+	gap: 1em;
+	margin: 0;
+	padding: 0;
+}
+.navbar-links a {
+	color: #ececec;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 1em;
+	padding: 0.2em 0.7em;
+	border-radius: 6px;
+	transition: background 0.2s, color 0.2s;
+}
+.navbar-links a:hover {
+	background: #23232a;
+	color: #e11d48;
+}
+
 .header-bg {
-    background: #181818;
-    padding: 30px 0 10px 0;
-    text-align: center;
-    border-bottom: 3px solid #b71c3b;
+	background: linear-gradient(90deg, #2c2c34 60%, #e11d48 100%);
+	padding: 2.5em 0 1.5em 0;
+	text-align: center;
 }
 .main-title {
-    font-size: 2.8em;
-    color: #b71c3b;
-    margin-bottom: 0;
-    letter-spacing: 2px;
+	font-size: 2.5em;
+	margin: 0 0 0.3em 0;
+	color: #fff;
+	letter-spacing: 2px;
 }
 .subtitle {
-    font-size: 1.5em;
-    color: #ececec;
-    margin-top: 0;
+	font-size: 1.2em;
+	color: #f3f3f3;
+	margin-bottom: 0;
 }
-.intro {
-    padding: 20px;
-    text-align: center;
+
+.blog-entry {
+	background: #23232a;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+	margin: 2em auto;
+	max-width: 900px;
+	padding: 2em;
 }
-#sinopsis {
-    color: #b71c3b;
-    font-weight: bold;
+.blog-title {
+	color: #e11d48;
+	margin-top: 0;
+	margin-bottom: 1em;
+	font-size: 1.7em;
+	letter-spacing: 1px;
 }
-.characters {
-    background-color: #232323;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 1100px;
-    box-shadow: 0 2px 12px #0006;
+.blog-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 2em;
 }
+.poster {
+	width: 220px;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(225,29,72,0.15);
+}
+
+
 .character-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 36px;
-    justify-items: center;
-    align-items: stretch;
-    margin-top: 32px;
-    padding-bottom: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 2em;
+	margin-top: 1em;
 }
 .character-card {
-    background: linear-gradient(135deg, #232323 70%, #b71c3b 100%);
-    color: #ececec;
-    border: none;
-    box-shadow: 0 4px 18px #000a;
-    border-radius: 18px;
-    padding: 22px 18px 18px 18px;
-    max-width: 260px;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.18s, box-shadow 0.18s;
+	background: #18181b;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(225,29,72,0.10);
+	text-align: center;
+	padding: 1em 0.5em;
+	transition: transform 0.2s;
 }
 .character-card:hover {
-    transform: translateY(-8px) scale(1.04);
-    box-shadow: 0 8px 32px #b71c3b88;
-}
-.character-name {
-    color: #b71c3b;
-    font-size: 1.18em;
-    margin: 10px 0 7px 0;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-shadow: 0 1px 4px #232323;
-}
-.character-desc {
-    font-size: 1em;
-    color: #ececec;
-    text-align: center;
-    margin-bottom: 0;
-}
-.plot, .seasons, .facts {
-    background: #232323;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-left: 5px solid #b71c3b;
-    color: #ececec;
-    box-shadow: 0 2px 12px #0006;
-}
-.section-title {
-    color: #b71c3b;
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-.season-list, .fact-list {
-    color: #ececec;
-    font-size: 1em;
-    padding-left: 20px;
-}
-.footer-bg {
-    background: #232323;
-    border-top: 3px solid #b71c3b;
-    padding: 15px 0;
-    text-align: center;
-}
-.footer-text {
-    color: #ececec;
-    font-size: 1.1em;
-}
-.poster, .plot-img {
-    width: 220px;
-    height: auto;
-    max-height: 320px;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px #b71c3b88;
-    margin-bottom: 20px;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	transform: translateY(-6px) scale(1.04);
+	box-shadow: 0 6px 24px rgba(225,29,72,0.18);
 }
 .character-img {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    max-height: 220px;
-    border-radius: 12px;
-    object-fit: cover;
-    margin-bottom: 14px;
-    box-shadow: 0 2px 12px #b71c3b88;
-    border: 2px solid #b71c3b;
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 0.7em;
+	border: 3px solid #e11d48;
 }
-.img-space {
-    width: 220px;
-    height: 320px;
-    background: #232323;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px #b71c3b88;
-    margin: 10px auto 20px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 1em;
+.character-name {
+	color: #e11d48;
+	margin: 0.3em 0 0.2em 0;
+	font-size: 1.1em;
 }
-@media (max-width: 900px) {
-    .character-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-    .character-card {
-        max-width: 98vw;
-    }
+.character-desc {
+	color: #f3f3f3;
+	font-size: 0.98em;
 }
+
+.plot-flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+	align-items: center;
+}
+.plot-text {
+	flex: 2;
+	font-size: 1.1em;
+	color: #f3f3f3;
+}
+.plot-img {
+	flex: 1;
+	max-width: 220px;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(225,29,72,0.15);
+}
+
+.season-list {
+	padding-left: 1.2em;
+	color: #fff;
+	font-size: 1.05em;
+}
+.season-list li {
+	margin-bottom: 0.7em;
+}
+
+.fact-list {
+	padding-left: 1.2em;
+	color: #f3f3f3;
+	font-size: 1.05em;
+}
+.fact-list li {
+	margin-bottom: 0.7em;
+}
+
+.footer-bg {
+	background: #2c2c34;
+	text-align: center;
+	padding: 1.2em 0;
+	margin-top: 2em;
+}
+.footer-text {
+	color: #e11d48;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+
+
