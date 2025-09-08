@@ -1,0 +1,80 @@
+/* Estilo minimalista y bonito para el índice */
+
+body {
+    background: linear-gradient(120deg, #e11d48 0%, #23232a 100%);
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+}
+.index-layout {
+    display: flex;
+    min-height: 100vh;
+}
+.index-aside {
+    background: #111;
+    color: #fff;
+    width: 270px;
+    min-height: 100vh;
+    padding: 2.5em 1.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 2px 0 16px rgba(0,0,0,0.10);
+}
+.index-aside h2 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+}
+.index-aside p {
+    font-size: 1.1em;
+    margin: 1.2em 0 0.5em 0;
+    line-height: 1.5;
+}
+.index-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2.5em 3em;
+    box-sizing: border-box;
+}
+
+
+.index-links h3 {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-bottom: 1.2em;
+    font-weight: 600;
+}
+.index-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.index-links li {
+    margin-bottom: 1.2em;
+}
+.index-links a {
+    color: #fff;
+    background: #e11d48;
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    border-radius: 8px;
+    font-size: 1em;
+    display: inline-block;
+    transition: background 0.2s;
+}
+.index-links a:hover {
+    background: #c1123b;
+}
+
